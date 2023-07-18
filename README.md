@@ -6,8 +6,6 @@ A full-stack project which allows you to create prompt posts to share on the mai
 
 This project was learned from JavaScript Mastery (https://www.youtube.com/@javascriptmastery)
 
-##
-
 Planned Additional Implementations:
 
 Implement Search:
