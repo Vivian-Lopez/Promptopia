@@ -2,9 +2,9 @@
 
 A full-stack project which allows you to create prompt posts to share on the main page, as well as allow for the creation of users and profiles.
 
-##
-
 This project was learned from JavaScript Mastery (https://www.youtube.com/@javascriptmastery)
+
+##
 
 Planned Additional Implementations:
 
