@@ -19,4 +19,6 @@ Implement Click on tag:
 
 Implement view other profiles
 
+##
+
 This project was learned from JavaScript Mastery (https://www.youtube.com/@javascriptmastery)
