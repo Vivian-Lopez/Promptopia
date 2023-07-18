@@ -1,5 +1,7 @@
 ## This Project is deployed on https://project-propt.vercel.app/
 
+![project_prompt_image](https://github.com/Vivian-Lopez/project_prompt/assets/87879238/9203468a-e068-4aa2-b2c4-92fda900b59b)
+
 A full-stack project which allows you to create prompt posts to share on the main page, as well as allow for the creation of users and profiles.
 
 ##
