@@ -1,4 +1,4 @@
-## This Project is deployed on https://project-propt.vercel.app/
+## Project deployed on https://project-propt.vercel.app/
 
 ![project_prompt_image](https://github.com/Vivian-Lopez/project_prompt/assets/87879238/9203468a-e068-4aa2-b2c4-92fda900b59b)
 
