@@ -13,10 +13,10 @@ Implement Search:
 - Search by tag
 - Search by username
 
-Implment Click on tag:
+Implement Click on tag:
 - Should fill tag name in search and display
       posts with that tag
 
-Implment view other profiles
+Implement view other profiles
 
 This project was learned from JavaScript Mastery (https://www.youtube.com/@javascriptmastery)
