@@ -1,4 +1,5 @@
-## This Project is deployed on: [https://promptopia-project-vivian-lopez.vercel.app/](https://promptopia-project-vivian-lopez.vercel.app/)
+## This Project is deployed on:
+[https://promptopia-project-vivian-lopez.vercel.app/](https://promptopia-project-vivian-lopez.vercel.app/)
 
 <img width="1034" alt="image" src="https://github.com/Vivian-Lopez/Promptopia/assets/87879238/18f4812c-1d8b-46eb-bef4-c7fc5a413657">
 
