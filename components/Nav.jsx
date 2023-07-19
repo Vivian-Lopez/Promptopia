@@ -4,12 +4,15 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { signIn, signOut, useSession, getProviders } from 'next-auth/react';
+import { Switch, useDarkreader } from 'react-darkreader';
 
 const nav = () => {
   const { data: session } = useSession();
   
   const [providers, setProviders] = useState(null);
   const [toggleDropdown, setToggleDropdown] = useState(false);
+
+  const [isDark, { toggle }] = useDarkreader(true);
 
   useEffect(() => {
     const setUpProviders = async () => {
@@ -22,8 +25,7 @@ const nav = () => {
   })
 
   return (
-    // Everything is contained in a nav tag for some reason
-    <nav className="flex-between w-full mb-16 pt-3">
+    <nav className="flex-between w-full mb-16 pt-3 relative">
       
       {/*The following is a link with an image and text to go to the home page*/}
       <Link href="/" className="flex gap-2 flex-center">
@@ -38,13 +40,14 @@ const nav = () => {
       </Link>
 
       {/* Desktop Navigation */}
-      <div className="sm:flex hidden">
+      <div className="gap-4 sm:flex hidden">
         {session?.user ? (
-          <div className="flex gap-3 md:gap-5">
+          <div className="flex gap-2 md:gap-5 target-element">
             <Link href="/create-prompt" className="black_btn">
               Create Post
             </Link>
-            <button type="button" onClick= {signOut} className="outline_btn">
+            <button type="button" onClick= {signOut} className={
+              isDark ? ("black_btn") : ("outline_btn")}>
               Sign Out
             </button>
             <Link href="/profile">
@@ -70,10 +73,11 @@ const nav = () => {
             ))}
           </>
         )}
+        <Switch checked={isDark} onChange={toggle} styling="docusaurus" className="absolute right-0 top-1.5"/>
       </div>
 
       {/* Mobile Navigation */}
-      <div className="sm:hidden flex relative">
+      <div className="gap-4 sm:hidden flex relative">
         {session?.user ? (
           <div className="flex-center">
             <Image src={session?.user.image}
@@ -125,7 +129,9 @@ const nav = () => {
             ))}
           </>
         )}
+        <Switch checked={isDark} onChange={toggle} styling="docusaurus" className="absolute right-0 top-1.5"/>
       </div>
+      {/*<button onClick={toggle}>{isDark ? '🌜' : '🌞'}</button>*/}
     </nav>
   )
 }
