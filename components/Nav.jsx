@@ -6,6 +6,17 @@ import { useState, useEffect } from 'react';
 import { signIn, signOut, useSession, getProviders } from 'next-auth/react';
 // import { Switch, useDarkreader } from 'react-darkreader';
 
+const darkReaderOptions = { brightness: 100, contrast: 96, sepia: 0 };
+
+export async function toggleDarkMode() {
+   if (typeof window !== "undefined") {
+      const { isEnabled, enable, disable, setFetchMethod } = await import("darkreader");
+      setFetchMethod(window.fetch);
+      const isOn = isEnabled();
+      isOn ? disable() : enable(darkReaderOptions);
+   }
+}
+
 const nav = () => {
   const { data: session } = useSession();
   
@@ -40,7 +51,7 @@ const nav = () => {
       </Link>
 
       {/* Desktop Navigation */}
-      <div className="gap-4 sm:flex hidden">
+      <div className="gap-4 sm:flex hidden relative">
         {session?.user ? (
           <div className="flex gap-2 md:gap-5 target-element">
             <Link href="/create-prompt" className="black_btn">
@@ -72,6 +83,7 @@ const nav = () => {
             ))}
           </>
         )}
+        <button onClick={toggleDarkMode} className="flex-center">🌜</button>
         {/* <Switch checked={isDark} onChange={toggle} styling="docusaurus" className="absolute right-0 top-1.5"/> */}
       </div>
 
@@ -128,9 +140,11 @@ const nav = () => {
             ))}
           </>
         )}
+        <button onClick={toggleDarkMode} className="flex-center">🌜</button>
         {/* <Switch styling="docusaurus" className="absolute right-0 top-1.5"/> */}
       </div>
-      {/*<button onClick={toggle}>{isDark ? '🌜' : '🌞'}</button>*/}
+      
+      {/*s{isDark ? '🌜' : '🌞'}*/}
     </nav>
   )
 }
