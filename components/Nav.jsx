@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { signIn, signOut, useSession, getProviders } from 'next-auth/react';
-import { Switch, useDarkreader } from 'react-darkreader';
+// import { Switch, useDarkreader } from 'react-darkreader';
 
 const nav = () => {
   const { data: session } = useSession();
@@ -12,7 +12,7 @@ const nav = () => {
   const [providers, setProviders] = useState(null);
   const [toggleDropdown, setToggleDropdown] = useState(false);
 
-  const [isDark, { toggle }] = useDarkreader(true);
+  // const [isDark, { toggle }] = useDarkreader(true);
 
   useEffect(() => {
     const setUpProviders = async () => {
@@ -46,8 +46,7 @@ const nav = () => {
             <Link href="/create-prompt" className="black_btn">
               Create Post
             </Link>
-            <button type="button" onClick= {signOut} className={
-              isDark ? ("black_btn") : ("outline_btn")}>
+            <button type="button" onClick= {signOut} className={"outline_btn"}>
               Sign Out
             </button>
             <Link href="/profile">
@@ -73,7 +72,7 @@ const nav = () => {
             ))}
           </>
         )}
-        <Switch checked={isDark} onChange={toggle} styling="docusaurus" className="absolute right-0 top-1.5"/>
+        {/* <Switch checked={isDark} onChange={toggle} styling="docusaurus" className="absolute right-0 top-1.5"/> */}
       </div>
 
       {/* Mobile Navigation */}
@@ -129,7 +128,7 @@ const nav = () => {
             ))}
           </>
         )}
-        <Switch checked={isDark} onChange={toggle} styling="docusaurus" className="absolute right-0 top-1.5"/>
+        {/* <Switch styling="docusaurus" className="absolute right-0 top-1.5"/> */}
       </div>
       {/*<button onClick={toggle}>{isDark ? '🌜' : '🌞'}</button>*/}
     </nav>
