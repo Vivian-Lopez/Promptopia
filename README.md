@@ -1,6 +1,6 @@
 ## Project deployed on https://project-propt.vercel.app/
 
-![project_prompt_image](https://github.com/Vivian-Lopez/project_prompt/assets/87879238/9203468a-e068-4aa2-b2c4-92fda900b59b)
+![image](https://github.com/Vivian-Lopez/Promptopia/assets/87879238/f56a681b-79bf-4542-b4f1-14101e8365ac)
 
 A full-stack project which allows you to create prompt posts to share on the main page, as well as allow for the creation of users and profiles.
 
