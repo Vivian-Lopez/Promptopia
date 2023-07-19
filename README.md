@@ -2,23 +2,14 @@
 
 ![image](https://github.com/Vivian-Lopez/Promptopia/assets/87879238/18d0fe27-e0a1-4fa0-8474-a933d74dc697)
 
+Full-stack project thagallows you to create posts containing AI prompts.
 
-A full-stack project which allows you to create prompt posts to share on the main page, as well as allow for the creation of users and profiles.
+## Tenchonlogies used:
 
-##
-
-Planned Additional Implementations:
-
-Implement Search:
-- Search by prompt
-- Search by tag
-- Search by username
-
-Implement Click on tag:
-- Should fill tag name in search and display
-      posts with that tag
-
-Implement view other profiles
+- Next.js framework
+- Tailwind CSS
+- MongoDB
+- Google OAuth 2.0
 
 ##
 
