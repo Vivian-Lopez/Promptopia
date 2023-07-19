@@ -1,4 +1,4 @@
-## Project deployed on [https://project-propt.vercel.app/](https://promptopia-project-vivian-lopez.vercel.app/)
+## Project deployed on [https://promptopia-project-vivian-lopez.vercel.app/](https://promptopia-project-vivian-lopez.vercel.app/)
 
 ![image](https://github.com/Vivian-Lopez/Promptopia/assets/87879238/18d0fe27-e0a1-4fa0-8474-a933d74dc697)
 
