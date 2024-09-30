@@ -18,5 +18,3 @@ Tenchnologies used:
 - Google OAuth 2.0
 
 ##
-
-This project was learned from JavaScript Mastery (https://www.youtube.com/@javascriptmastery)
